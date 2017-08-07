@@ -7,7 +7,7 @@ function convertToRoman(num) {
         while(decimal[i] <= num){
             // deciToRom = deciToRom + roman[i];
             deciToRom += roman[i];
-            deciToRom = deciToRom - decimal;
+            deciToRom = deciToRom - decimal[i];
         }
     }
   return deciToRom;
