@@ -4,9 +4,10 @@ function convertToRoman(num) {
     var roman = ['I', 'IV', 'V', 'IX', 'X', 'XL', 'L', 'XC', 'C', 'CD', 'D', 'CM', 'M',];
     var deciToRom = '';
     for(var i = 0; i < decimal; i++){
-        while(decimal[i] < num){
+        while(decimal[i] <= num){
             // deciToRom = deciToRom + roman[i];
             deciToRom += roman[i];
+            deciToRom = deciToRom - decimal;
         }
     }
   return deciToRom;
