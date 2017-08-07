@@ -5,7 +5,8 @@ function convertToRoman(num) {
     var deciToRom = '';
     for(var i = 0; i < decimal; i++){
         while(decimal[i] < num){
-            deciToRom = deciToRom + roman[i];
+            // deciToRom = deciToRom + roman[i];
+            deciToRom += roman[i];
         }
     }
   return deciToRom;
