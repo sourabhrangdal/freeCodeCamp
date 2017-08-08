@@ -5,7 +5,7 @@
 
 // chunk 1
 function titleCase(str){
-return str.split(''); // split single space and word
+return str.split(''); // split single space and letter
 }
 titleCase("i'm a little tea pot");
 // (20) ["i", "'", "m", " ", "a", " ", "l", "i", "t", "t", "l", "e", " ", "t", "e", "a", " ", "p", "o", "t"]
