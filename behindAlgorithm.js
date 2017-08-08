@@ -28,20 +28,26 @@ return str.split(' ').map(function(letter){ return letter.charAt(0)});
 }
 titleCase("i'm a little tea pot"); // (5) ["i", "a", "l", "t", "p"]
 
+// chunk 4
+function titleCase(str){
+return str.split(' ').map(function(letter){ return letter.charAt(0).toUpperCase()});
+}
+titleCase("i'm a little tea pot"); // (5) ["I", "A", "L", "T", "P"]
+
 // chunk 5
 function titleCase(str){
-return str.split(' ').map(function(letter){ return letter.charAt(0) + letter});
+return str.split(' ').map(function(letter){ return letter.charAt(0).toUpperCase() + letter});
 }
-titleCase("i'm a little tea pot"); // (5) ["ii'm", "aa", "llittle", "ttea", "ppot"]
+titleCase("i'm a little tea pot"); // (5) ["Ii'm", "Aa", "Llittle", "Ttea", "Ppot"]
 
 // chunk 6
 function titleCase(str){
-return str.split(' ').map(function(letter){ return letter.charAt(0) + letter.slice(1)});
+return str.split(' ').map(function(letter){ return letter.charAt(0).toUpperCase() + letter.slice(1)});
 }
-titleCase("i'm a little tea pot"); // (5) ["i'm", "a", "little", "tea", "pot"]
+titleCase("i'm a little tea pot"); // (5) ["I'm", "A", "Little", "Tea", "Pot"]
 
 // chunk 7
 function titleCase(str){
-return str.split(' ').map(function(letter){ return letter.charAt(0) + letter.slice(1)}).join(' ');
+return str.split(' ').map(function(letter){ return letter.charAt(0).toUpperCase() + letter.slice(1)}).join(' ');
 }
-titleCase("i'm a little tea pot"); // "i'm a little tea pot"
+titleCase("i'm a little tea pot"); // "I'm A Little Tea Pot"
