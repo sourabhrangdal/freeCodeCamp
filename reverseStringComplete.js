@@ -12,7 +12,7 @@ function reverseString(str){
 
     return joinStr;
 }
-reverseString("Reverse the string");
+reverseString("sourabh"); // ('hbaruos')
 
 // 1
 function reverseString(str){
