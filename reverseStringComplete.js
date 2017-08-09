@@ -1,4 +1,16 @@
 
+// 3
+function reverseString(str){
+
+       if(str === "") {
+           return "";
+       } else {
+           return reverseString(str.substr(1)) + str.charAt(0);
+       }
+        // return (str === "") ? "" : reverseString(str.substr(1)) + str.charAt(0);
+}
+reverseString("sourabh"); // ('hbaruos')
+
 // 2
 function reverseString(str){
     var splitStr = str.split('');
