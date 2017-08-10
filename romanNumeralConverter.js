@@ -7,7 +7,7 @@ function convertToRoman(num) {
     for(var i = 0; i < decimal.length; i++){
         while(decimal[i] <= num){
             deciToRom += roman[i]; 
-            num -= decimal[i]; // where I am doing wrong?
+            num -= decimal[i]; 
         }
     }
   return deciToRom;
