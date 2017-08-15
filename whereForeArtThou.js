@@ -9,8 +9,8 @@ function whatIsInAName(collection, source) {
       if(source[i] != obj[i]){ // if source is not equal to obj
         return false;
       }
-    return true;
     }
+    return true; // for return true
   });
   
   return arr;
