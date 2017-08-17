@@ -2,6 +2,32 @@
 function translatePigLatin(str){
 
 var vowel = ['a','e','i','o','u'];
+var pigLatin = str.split('');
+	
+	if(vowel.includes(str[0])){
+		return str = str + " " + 'way';
+	} else {
+		for(var i = 0; i < str.length; i++){
+			if(!vowel.includes(str[i])){
+				pigLatin.push(pigLatin.shift());
+			} else {
+				pigLatin.push('ay');
+				return pigLatin.join('');
+			}
+		} 
+	}
+
+}
+translatePigLatin('sourabh');
+
+
+
+/* work-in-progress
+
+
+function translatePigLatin(str){
+
+var vowel = ['a','e','i','o','u'];
 var pigLatin = str.split(''); // ['s','o','u','r','a','b','h']
 	// if string has first vowel, includes(str[0])
 	if(vowel.includes(str[0])){
@@ -26,8 +52,7 @@ var pigLatin = str.split(''); // ['s','o','u','r','a','b','h']
 translatePigLatin('sourabh');
 
 
-
-/* work-in-progress
+//
 
 var a = 'sourabh'.split();
 var b = a.push(a.shift());

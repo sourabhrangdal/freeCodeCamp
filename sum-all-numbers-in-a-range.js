@@ -1,3 +1,20 @@
+
+function sumAll(arr) {
+  
+  var minArr = Math.min(arr[0],arr[1]);
+  var maxArr = Math.max(arr[0],arr[1]);
+  var totalArr = 0;
+  for(var i = minArr; i <= maxArr; i++){
+    totalArr = totalArr + i; // totalArr += i;
+  }
+  return totalArr;
+
+}
+sumAll([10, 5]);
+
+
+/*
+
 function sumAll(arr) {
   var minArr = Math.min(arr[0],arr[1]);
   var maxArr = Math.max(arr[0],arr[1]);
@@ -19,3 +36,5 @@ function sumAll(arr) {
 // sumAll([4, 1]);
 // sumAll([5, 10]);
 sumAll([10, 5]);
+
+*/

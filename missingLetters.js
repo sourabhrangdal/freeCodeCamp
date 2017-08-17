@@ -1,4 +1,21 @@
 
+function fearNotLetter(str) {
+
+    var keyCode, len = str.length;
+
+    for(var i = 0; i < len; i++){
+        code = len.charCodeAt(i)   
+        //code!= str.charCodeAt(0) + i;
+        
+        console.log(code +" "+ String.fromCharCode(code - 1));
+    }
+
+}
+fearNotLetter("abce");
+
+
+/*
+
 // work in progress
 
 function fearNotLetter(str) {
@@ -16,3 +33,5 @@ function fearNotLetter(str) {
 
 }
 fearNotLetter("abce");
+
+*/
