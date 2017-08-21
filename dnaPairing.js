@@ -1,11 +1,24 @@
 
+//
+
+function pairElement(str){
+    var pairDNA = { T:'A', A:'T', G:'C', C:'G' };
+
+    return str.split('').map(function(letter){
+        return [letter, pairDNA[letter]];
+    });
+}
+pairElement("CGC")
+
+
+//
+
 function pairElement(str){
     
     var pairDNA = {T:'A', A:'T', G:'C', C:'G'};
 
     str = str.split('');
     for(var i = 0; i < str.length; i++){
-        // str[i] = str[i] + pairDNA[str[i]];
         str[i] = [ str[i], pairDNA[str[i]] ];
     }
 
@@ -16,7 +29,25 @@ pairElement("CGC")
 
 /* work-in-progress
 
-// not working
+// map
+
+function pairElement(str){
+
+    var pairDNA = { T:'A', A:'T', G:'C', C:'G' };
+
+    return str.split('').map(function(letter){
+        // console.log(letter);
+        // console.log(letter, pairDNA)
+        // console.log(letter, pairDNA[letter])
+        // return letter, pairDNA[letter];
+        return [letter, pairDNA[letter]];
+});
+
+pairElement("CGC")
+
+// ------------------------ //
+
+// for loop
 
 function pairElement(str){
     
